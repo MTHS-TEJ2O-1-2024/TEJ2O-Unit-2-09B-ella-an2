@@ -38,6 +38,8 @@ input.onGesture(Gesture.Shake, function () {
 input.onButtonPressed(Button.A, function () {
     currentScore = currentScore + 1
     basic.showIcon(IconNames.Yes)
+    basic.pause(1000)
+    basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
