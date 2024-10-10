@@ -27,7 +27,7 @@ while True:
         display.show(Image.SQUARE)
 
     if random_number == 2:
-        display.show(Image.S)
+        display.show(Image.SWORD)
 
     sleep(1)
     display.show(Image.HAPPY)
