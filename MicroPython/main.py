@@ -1,6 +1,6 @@
 """
-Created by: Mr. Coxall
-Created on: Sep 2020
+Created by: Ella An
+Created on: Nov 2024
 This module is a Micro:bit MicroPython program
 """
 
@@ -19,15 +19,15 @@ while True:
     if accelerometer.was_gesture("shake"):
         random_number = random.randint(0, 2)
         display.clear()
-    
-    if random_number == 0:
-        display.show(Image.SQUARE_SMALL)
 
-    if random_number == 1:
-        display.show(Image.SQUARE)
+        if random_number == 0:
+            display.show(Image.SQUARE_SMALL)
 
-    if random_number == 2:
-        display.show(Image.SWORD)
+        if random_number == 1:
+            display.show(Image.SQUARE)
+
+        if random_number == 2:
+            display.show(Image.SWORD)
 
     sleep(1)
     display.show(Image.HAPPY)
